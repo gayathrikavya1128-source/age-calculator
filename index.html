@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Age & Temperature Converter</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Age Calculator & Temperature Converter</h1>
+
+<!-- AGE CALCULATOR -->
+<section class="section">
+<h2>Age Calculator</h2>
+
+<label>Date of Birth:</label>
+<input type="date" id="dob">
+
+<label>Previous Year:</label>
+<input type="date" id="prevYear" placeholder="Enter previous year (optional)">
+
+<div class="button-row">
+<button class="toggle-btn" id="todayBtn" onclick="toggleToday()">Use Today</button>
+<button onclick="calculateAge()">Calculate Age</button>
+<button onclick="clearAge()">Clear</button>
+</div>
+
+<div class="result" id="ageResult"></div>
+</section>
+
+<hr>
+
+<!-- TEMPERATURE CONVERTER -->
+<section class="section">
+<h2>Temperature Converter</h2>
+
+<input type="number" id="tempValue" placeholder="Enter temperature">
+
+<label>From:</label>
+<select id="fromScale">
+<option value="C">Celsius</option>
+<option value="F">Fahrenheit</option>
+<option value="K">Kelvin</option>
+</select>
+
+<label>To:</label>
+<select id="toScale">
+<option value="C">Celsius</option>
+<option value="F">Fahrenheit</option>
+<option value="K">Kelvin</option>
+</select>
+
+<div class="button-row">
+<button onclick="convertTemp()">Convert</button>
+<button onclick="clearTemp()">Clear</button>
+</div>
+
+<div class="result" id="tempResult"></div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
